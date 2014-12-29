@@ -1,0 +1,14 @@
+{
+  "name": "IMGUR gif to gifv",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Replaces i.imgur.com gifs with the new gifv format",
+  "homepage_url": "https://github.com/discountrobot/imgur-gif-to-gifv",
+  "content_scripts": [
+    {
+      "run_at":    "document_start",
+      "matches": [ "*://i.imgur.com/*" ],
+      "js":      [ "src/inject/inject.js" ]
+    }
+  ]
+}
